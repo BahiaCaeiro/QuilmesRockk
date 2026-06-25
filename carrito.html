@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>Mi Carrito | Quilmes Rock</title>
+
+   <!-- BOOTSTRAP -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- FUENTES -->
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+   <!-- ESTILOS -->
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="compra.css">
+
+</head>
+
+<body>
+
+<!-- ESTILOS -->
+    <header>
+        <div class="header-container">
+
+            <!-- MENÚ -->
+            <nav class="menu-nav" aria-label="Menú principal">
+
+                <a href="index.html">INICIO</a>
+                <a href="index.html#tickets">ENTRADAS</a>
+                <a href="index.html#faq">PREGUNTAS FRECUENTES</a>
+                <a href="index.html#contacto">COMUNICATE</a>
+                <a href="carrito.html">MI CARRITO</a>
+
+            </nav>
+
+            <!-- LOGO + INFO EVENTO -->
+            <div class="header-center">
+
+                <div class="logo">
+                    <img src="imagenes/QUILMES ROCK LOGO.png" alt="Logo Quilmes Rock">
+                </div>
+
+                <div class="evento-info">
+                    <div class="linea"></div>
+                    <p>
+                        <strong>TECNÓPOLIS</strong><br>
+                        12, 13 Y 14 DE ABRIL 2027
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- MENÚ HAMBURGUESA -->
+            <button
+            class="hamburguesa"
+            id="btnMenu"
+            aria-label="Abrir menú">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- TICKER -->
+    <div class="ticker">
+
+        <div class="ticker-track">
+            <p>QUILMES ROCK 2027 · ENTRADAS DISPONIBLES</p>
+            <p>QUILMES ROCK 2027 · ENTRADAS DISPONIBLES</p>
+            <p>QUILMES ROCK 2027 · ENTRADAS DISPONIBLES</p>
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <main class="carrito">
+
+        <!-- TÍTULO -->
+        <h1>MI CARRITO</h1>
+
+        <p class="sub">
+            REVISÁ TUS PRODUCTOS ANTES DE FINALIZAR LA COMPRA
+        </p>
+
+        <!-- GRID DEL CARRITO -->
+        <div class="carrito-grid">
+
+            <!-- PRODUCTOS -->
+            <div class="productos">
+
+                <!-- PRODUCTO 1 -->
+                <article class="producto verde">
+
+                    <img src="imagenes/REMERA OFICIAL 1.jpg"
+                    alt="Remera Oficial Quilmes Rock">
+
+                    <div class="info">
+                        <h2>REMERA OFICIAL</h2>
+                        <p>Talle M · Color Negro</p>
+                        <p>Cantidad: 1</p>
+                    </div>
+
+                    <div class="precio">
+                        $39.99
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article class="producto rojo">
+
+                    <img src="imagenes/GORRA OFICIAL.jpg"
+                    alt="Gorra Oficial Quilmes Rock">
+
+                    <div class="info">
+                        <h2>GORRA OFICIAL</h2>
+                        <p>Color Negro</p>
+                        <p>Cantidad: 1</p>
+                    </div>
+
+                    <div class="precio">
+                        $19.99
+                    </div>
+
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article class="producto azul">
+
+                    <img src="imagenes/VASO 1.jpg"
+                    alt="Vaso Oficial Quilmes Rock">
+
+                    <div class="info">
+                        <h2>VASO OFICIAL</h2>
+                        <p>Edición Festival</p>
+                        <p>Cantidad: 2</p>
+                    </div>
+
+                    <div class="precio">
+                        $29.98
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- RESUMEN -->
+            <section class="resumen">
+
+                <h2>RESUMEN</h2>
+
+                <div class="fila">
+                    <span>Productos</span>
+                    <span>4</span>
+                </div>
+
+                <div class="fila">
+                    <span>Envío</span>
+                    <span>Gratis</span>
+                </div>
+
+                <div class="fila total">
+                    <span>Total</span>
+                    <span>$89.96</span>
+                </div>
+
+                <a href="compra.html" class="btn-finalizar">
+                    FINALIZAR COMPRA
+                </a>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logoquilmes">
+
+            <img src="imagenes/LOGO.png" alt="Logo Quilmes">
+
+        </div>
+
+        <div class="footer-redes">
+
+            <a href="#">
+                <img src="imagenes/logo-01.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="imagenes/logo-06.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="imagenes/logo-02.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="imagenes/logo-05.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="imagenes/logo-04.png" alt="">
+            </a>
+
+            <a href="#">
+                <img src="imagenes/logo-03.png" alt="">
+            </a>
+
+        </div>
+
+        <p>
+            <em>
+                BEBER CON MODERACIÓN.
+                PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.
+            </em>
+        </p>
+
+    </footer>
+
+    <!-- ESTILOS -->
+    <script>
+        const btnMenu = document.getElementById("btnMenu");
+        const menu = document.querySelector(".menu-nav");
+        btnMenu.addEventListener("click", () => {
+            menu.classList.toggle("activo");
+        });
+    </script>
+
+</body>
+
+</html>
